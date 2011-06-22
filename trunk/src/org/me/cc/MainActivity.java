@@ -19,6 +19,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.ToggleButton;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -88,6 +89,13 @@ public class MainActivity extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.main);
 
+            Spinner s = (Spinner) findViewById(R.id.widget40);
+    ArrayAdapter adapter = ArrayAdapter.createFromResource(
+            this, R.array.tiempos, android.R.layout.simple_spinner_item);
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    s.setAdapter(adapter);
+        
+        
         conexion = (Button) findViewById(R.id.datosconex);
 
         servidor = (ToggleButton) findViewById(R.id.servidor);

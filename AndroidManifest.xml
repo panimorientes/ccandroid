@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="org.me.cc">
+    <application>
+        <activity android:name=".MainActivity" android:label="Camcenter Android">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Conexion" android:label="Camcenter android conexion"></activity>
+        <activity android:name=".notificacion" android:label="Camcenter android Notificacion"></activity>        
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
